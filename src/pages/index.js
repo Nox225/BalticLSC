@@ -4,6 +4,7 @@ import Demo from './Demo';
 import DataShelf from './DataShelf';
 import DevShelf from './DevShelf';
 import Auth from './Auth'
+import AppDetails from './AppDetails';
 
 export {
   Store,
@@ -11,5 +12,6 @@ export {
   Demo,
   DataShelf,
   DevShelf,
-  Auth
+  Auth,
+  AppDetails
 };

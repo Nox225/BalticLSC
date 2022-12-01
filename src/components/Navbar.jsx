@@ -5,9 +5,8 @@ import { FiSearch } from 'react-icons/fi'
 import interreg from '../assets/interreg.jpg'
 import balticlsc from '../assets/balticlsc.jpg'
 
-const Navbar = ({ username }) => {
+const Navbar = ({ username, searchTerm, setSearchTerm }) => {
   // const navigate = useNavigate()
-  const [searchTerm, setSearchTerm] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -16,7 +15,7 @@ const Navbar = ({ username }) => {
   }
 
   return (
-    <nav className='bg-white shadow-md flex flex-row items-center justify-between'>
+    <nav className='bg-white shadow-md flex flex-row items-center justify-between mb-2'>
       <div className='flex flex-row items-center'>
         <img src={balticlsc} alt='Baltic Logo' className='sm:ml-[30px] ml-[10px] w-[135px] h-[36px]'/>
         <img src={interreg} alt='Baltic Logo' className='lg:flex hidden ml-[20px] w-[250px] h-[50px]'/>
